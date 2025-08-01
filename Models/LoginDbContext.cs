@@ -6,7 +6,7 @@ namespace ProjectLogin.Models;
 
 public class LoginDbContext(DbContextOptions options) : DbContext(options)
 {
-    public DbSet<User> Profile => Set<User>();
+    public DbSet<User> User => Set<User>();
     protected override void OnModelCreating(ModelBuilder model)
     {
         model.Entity<User>();
